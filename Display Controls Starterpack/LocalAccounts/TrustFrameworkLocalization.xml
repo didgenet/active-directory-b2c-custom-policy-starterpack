@@ -4,12 +4,12 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
   xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" 
   PolicySchemaVersion="0.3.0.0" 
-  TenantId="yourtenant.onmicrosoft.com" 
+  TenantId="acsmembersdev.onmicrosoft.com" 
   PolicyId="B2C_1A_TrustFrameworkLocalization" 
-  PublicPolicyUri="http://yourtenant.onmicrosoft.com/B2C_1A_TrustFrameworkLocalization">
+  PublicPolicyUri="http://acsmembersdev.onmicrosoft.com/B2C_1A_TrustFrameworkLocalization">
 
   <BasePolicy>
-    <TenantId>yourtenant.onmicrosoft.com</TenantId>
+    <TenantId>acsmembersdev.onmicrosoft.com</TenantId>
     <PolicyId>B2C_1A_TrustFrameworkBase</PolicyId>
   </BasePolicy>
 
@@ -234,7 +234,9 @@
           <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfUserAccountDisabled">Your account has been locked. Contact your support person to unlock it, then try again.</LocalizedString>
           <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfUserAccountLocked">Your account is temporarily locked to prevent unauthorized use. Try again later.</LocalizedString>
           <LocalizedString ElementType="ErrorMessage" StringId="AADRequestsThrottled">There are too many requests at this moment. Please wait for some time and try again.</LocalizedString>
-        </LocalizedStrings>
+         <LocalizedResource ElementType="ClaimType" ElementId="TransitionID" SubElementId="DisplayName" LanguageCode="en-US" Value="Transition ID" />
+         <LocalizedResource ElementType="ClaimType" ElementId="TransitionID" SubElementId="DisplayName" LanguageCode="fr-FR" Value="ID de transition" />
+         </LocalizedStrings>
       </LocalizedResources>
 
       <!-- Edit profile page English-->
